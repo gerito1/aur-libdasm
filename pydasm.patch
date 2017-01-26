@@ -1,0 +1,13 @@
+diff --git a/pydasm/setup.py b/pydasm/setup.py
+index de579ee..26f2cf3 100644
+--- a/pydasm/setup.py
++++ b/pydasm/setup.py
+@@ -9,7 +9,7 @@ module = Extension('pydasm',
+ 	include_dirs = [incdir],
+ 	libraries = [],
+ 	library_dirs = [],
+-	sources = ['../libdasm.c', 'pydasm.c'])
++	sources = ['libdasm.c', 'pydasm/pydasm.c'])
+ 
+ setup(name = 'pydasm',
+     version = '1.5',
